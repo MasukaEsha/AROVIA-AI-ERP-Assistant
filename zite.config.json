@@ -1,6 +1,16 @@
 {
-  "project": {
-    "name": "ERP Assistant",
-    "basePublicIdentifier": "70bdae079d969272"
+  "id": "9mepsh2sa1",
+  "accessMode": "external",
+  "integrations": {
+    "gemini": {
+      "type": "gemini",
+      "connectionId": "svc_517608"
+    }
+  },
+  "seoSettings": {
+    "title": "AROVIA-AI ERP Assistant",
+    "description": "AROVIA-AI ERP Assistant. It is a web application where a user types a business question in English, an AI converts it to a database query, the database returns data, and the AI formats a human-readable answer.",
+    "thumbnailUrl": "https://images.fillout.com/orgid-810287/flowpublicid-9mepsh2sa1/widgetid-default/kX2LJKc5LmEn7P85tbibts/Gemini_Generated_Image_p71qxyp71qxyp71q.jfif",
+    "faviconUrl": "https://images.fillout.com/orgid-810287/flowpublicid-9mepsh2sa1/widgetid-default/jY4EaQ13GtYG1pTzWUBN53/Gemini_Generated_Image_mgo3pymgo3pymgo3.jfif"
   }
 }
