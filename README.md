@@ -404,3 +404,51 @@ How: If AI-generated SQL fails, the error is sent back to AI to fix and retry on
 
 Presentation line: "If the AI makes a mistake in the query, the system automatically asks it to fix the error and tries again."
 
+9. API ENDPOINTS
+Endpoint 1: POST /api/ask
+
+Purpose: AI-powered question answering
+
+Input: { "question": "Which product sold the most?" }
+
+Processing: AI → SQL → Validate → Execute → AI formats answer
+
+Output: { "question": "...", "sql": "SELECT...", "answer": "Laptop sold the most...", "data": [...] }
+
+Endpoint 2: POST /api/dashboard
+
+Purpose: Dashboard statistics and chart data
+
+Input: {} (no input needed)
+
+Output: { totalSalesCount, totalRevenue, totalProducts, lowStockProducts, salesLast30Days, topProducts, salesByCategory, lowStockList }
+
+Endpoint 3: POST /api/manageData
+
+Purpose: CRUD operations on any table
+
+Input: { "table": "employees", "action": "list" } or { "table": "products", "action": "create", "record": {...} }
+
+Output: { "records": [...], "success": true }
+
+10. SECURITY ANALYSIS
+✅ Implemented:
+
+SQL injection prevention via AI — The AI generates SQL, not the user directly. The validateSQL() function blocks dangerous keywords.
+
+Read-only enforcement — Only SELECT/WITH queries pass validation. INSERT, DELETE, DROP, ALTER, TRUNCATE, GRANT, REVOKE are all blocked.
+
+API key protection — The Gemini API key is stored as an environment variable (ZITE_GEMINI_ACCESS_TOKEN), never exposed to the frontend.
+
+Input validation — Zod schemas validate all API inputs.
+
+❌ NOT implemented:
+
+User authentication — Anyone with the URL can access the app. "Authentication is not currently implemented. In a production system, we would add login functionality."
+
+Role-based access — No admin/user roles. "This is not implemented because the project focuses on the AI query feature."
+
+Rate limiting — No protection against excessive AI queries. "For a production system, we would add rate limiting to control costs."
+
+Honest viva answer: "Our project focuses on demonstrating the AI query concept. In a real production system, we would add user authentication, role-based access, and rate limiting."
+
