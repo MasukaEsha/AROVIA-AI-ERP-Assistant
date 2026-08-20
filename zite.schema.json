@@ -1,0 +1,463 @@
+{
+  "tables": [
+    {
+      "id": "tpeV2euPgmP",
+      "sdkName": "employees",
+      "name": "Employees",
+      "primaryFieldId": "ft5rXa1rCQw",
+      "fields": [
+        {
+          "id": "ft5rXa1rCQw",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6UnQeUBjRo",
+          "sdkName": "department",
+          "definition": {
+            "name": "Department",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "icuu",
+                  "label": "Sales",
+                  "color": "blue"
+                },
+                {
+                  "value": "7T5w",
+                  "label": "HR",
+                  "color": "green"
+                },
+                {
+                  "value": "t7E2",
+                  "label": "IT",
+                  "color": "purple"
+                },
+                {
+                  "value": "hAdj",
+                  "label": "Accounts",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f8rt2gwNCqJ",
+          "sdkName": "designation",
+          "definition": {
+            "name": "Designation",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9UXjAqdCVF",
+          "sdkName": "salary",
+          "definition": {
+            "name": "Salary",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f5ZDfhnSPrL",
+          "sdkName": "joiningDate",
+          "definition": {
+            "name": "Joining Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fneU5izJUMv",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "deQT",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "vm7k",
+                  "label": "Inactive",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "ffqros5YyZB",
+          "sdkName": "sales",
+          "definition": {
+            "name": "Sales",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txys4pDGmHC",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f79QwGLR8id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tqNDbfpR6qW",
+      "sdkName": "suppliers",
+      "name": "Suppliers",
+      "primaryFieldId": "fdMXdNZZPw1",
+      "fields": [
+        {
+          "id": "fdMXdNZZPw1",
+          "sdkName": "supplierName",
+          "definition": {
+            "name": "Supplier Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fsw9WYJP5pz",
+          "sdkName": "phone",
+          "definition": {
+            "name": "Phone",
+            "type": "phone_number",
+            "template": {}
+          }
+        },
+        {
+          "id": "fovrC48pbFu",
+          "sdkName": "email",
+          "definition": {
+            "name": "Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8KgE8gAujy",
+          "sdkName": "outstandingAmount",
+          "definition": {
+            "name": "Outstanding Amount",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fbV8zb8ag2T",
+          "sdkName": "products",
+          "definition": {
+            "name": "Products",
+            "type": "linked_record",
+            "template": {
+              "tableId": "troUaBAPM3Z",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fjXRWSBent9"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "troUaBAPM3Z",
+      "sdkName": "products",
+      "name": "Products",
+      "primaryFieldId": "fbQpK6JvMGt",
+      "fields": [
+        {
+          "id": "fbQpK6JvMGt",
+          "sdkName": "productName",
+          "definition": {
+            "name": "Product Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fiSx4gKJmDZ",
+          "sdkName": "category",
+          "definition": {
+            "name": "Category",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "onYK",
+                  "label": "Computers",
+                  "color": "blue"
+                },
+                {
+                  "value": "pUdu",
+                  "label": "Peripherals",
+                  "color": "green"
+                },
+                {
+                  "value": "4VgR",
+                  "label": "Networking",
+                  "color": "purple"
+                },
+                {
+                  "value": "wNDa",
+                  "label": "Storage",
+                  "color": "orange"
+                },
+                {
+                  "value": "xztX",
+                  "label": "Accessories",
+                  "color": "pink"
+                },
+                {
+                  "value": "2BMy",
+                  "label": "Power",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "faAvTHxdG66",
+          "sdkName": "price",
+          "definition": {
+            "name": "Price",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fmXFmCNdPAR",
+          "sdkName": "stock",
+          "definition": {
+            "name": "Stock",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f3KzzhSsyJa",
+          "sdkName": "minimumStock",
+          "definition": {
+            "name": "Minimum Stock",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fjXRWSBent9",
+          "sdkName": "supplier",
+          "definition": {
+            "name": "Supplier",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tqNDbfpR6qW",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fbV8zb8ag2T"
+            }
+          }
+        },
+        {
+          "id": "ft43MgpwBGf",
+          "sdkName": "sales",
+          "definition": {
+            "name": "Sales",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txys4pDGmHC",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fdMWd1jQhSJ"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6y296RTGLp",
+      "sdkName": "customers",
+      "name": "Customers",
+      "primaryFieldId": "fmimd4QW9MQ",
+      "fields": [
+        {
+          "id": "fmimd4QW9MQ",
+          "sdkName": "customerName",
+          "definition": {
+            "name": "Customer Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fr32NwcnaQh",
+          "sdkName": "phone",
+          "definition": {
+            "name": "Phone",
+            "type": "phone_number",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9rNyHvPgr3",
+          "sdkName": "email",
+          "definition": {
+            "name": "Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "f69FCeeXJFM",
+          "sdkName": "sales",
+          "definition": {
+            "name": "Sales",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txys4pDGmHC",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "faPENdyaXqi"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "txys4pDGmHC",
+      "sdkName": "sales",
+      "name": "Sales",
+      "primaryFieldId": "f1gntQP9CN8",
+      "fields": [
+        {
+          "id": "f1gntQP9CN8",
+          "sdkName": "saleNumber",
+          "definition": {
+            "name": "Sale Number",
+            "type": "autonumber",
+            "template": {}
+          }
+        },
+        {
+          "id": "fdMWd1jQhSJ",
+          "sdkName": "product",
+          "definition": {
+            "name": "Product",
+            "type": "linked_record",
+            "template": {
+              "tableId": "troUaBAPM3Z",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "ft43MgpwBGf"
+            }
+          }
+        },
+        {
+          "id": "f79QwGLR8id",
+          "sdkName": "employee",
+          "definition": {
+            "name": "Employee",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tpeV2euPgmP",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "ffqros5YyZB"
+            }
+          }
+        },
+        {
+          "id": "faPENdyaXqi",
+          "sdkName": "customer",
+          "definition": {
+            "name": "Customer",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t6y296RTGLp",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f69FCeeXJFM"
+            }
+          }
+        },
+        {
+          "id": "fnSkNSD3aVL",
+          "sdkName": "quantity",
+          "definition": {
+            "name": "Quantity",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fp5hvbGFppJ",
+          "sdkName": "unitPrice",
+          "definition": {
+            "name": "Unit Price",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fdE5Nq7uJ8K",
+          "sdkName": "totalAmount",
+          "definition": {
+            "name": "Total Amount",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fk23w8dC7qk",
+          "sdkName": "saleDate",
+          "definition": {
+            "name": "Sale Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
